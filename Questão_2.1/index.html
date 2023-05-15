@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Rede Social SN</title>
+</head>
+<body>
+    
+    <header>
+        <img src="./assets/assets/logo.svg" alt="Logo Rede Social SN">
+    </header>
+
+    <main class="main">
+        <!--Formulário de postagem-->
+        <div class="newPost">
+            <div class="infoUser">
+                <div class="imgUser"> 
+
+                    </div>
+                    <strong>Andrew Lemes</strong>
+                </div>
+                
+                <!--Formulário de envio-->
+                <form action="" class="formPost" id = "formPost"> 
+                <textarea id="textarea" placeholder="O que você está pensando?">  </textarea>
+
+                 <div class="iconsAndButton">
+                    <div class="icons">
+                        <button class="btnFileForm"><img src="./assets/assets/img.svg" alt="Adicionar uma imagem"></button>
+                        <button class="btnFileForm"><img src="./assets/assets/gif.svg" alt="Adicionar um gif"></button>
+                        <button class="btnFileForm"><img src="./assets/assets/video.svg" alt="Adicionar um vídeo"></button>
+                    </div>    
+                        <button type="submit" id="botao" class="btnSubmitForm">Publicar</button>
+                    </div>
+                </form>
+            </div>
+
+        <ul class="posts" id = "posts"></ul>
+                
+          
+
+
+    </main>
+
+    <script type='module' src='/Controllers/FormPost.js'></script>
+
+</body>
+</html>

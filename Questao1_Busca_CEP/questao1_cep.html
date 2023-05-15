@@ -1,26 +1,15 @@
 <!--
     Questão 1: Busca CEP (Valor: 30 pontos)
 -->
+    <!-- Links-->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Busca CEP</title>
-    <style>
-        body {
-            /*...*/
-        }
-        /*...*/
-    </style>
-
-</head>
-<body> <!-- O conteúdo todo do body deve estar com cor de fundo amarelo clara, com margens de 3rem -->
     
-    <h1> Busca CEP </h1>
+<!------------------------------------------------------------------------->
+    <!--Main JS-->
+   
 
+    <!-- O conteúdo todo do body deve estar com cor de fundo amarelo clara, com margens de 3rem -->
+     
     <!-- Crie um form com um input de texto para digitar o CEP (sem traço) -->
         <!-- O form deve estar centralizado, e o input com padding (borda interna) de 0.7rem -->
 
@@ -28,45 +17,47 @@
     <!-- Crie uma tag h2 que mostra o nome da cidade. 
         Em seguida, insira dois parágrafos (tag p), um para o bairro e outro para a rua -->
     <!-- Tanto o h2 quantos os parágrafos devem estar centralizados-->
+<!----------------------------------------------------------------------------------->
 
-    <script>
-        // ESCREVA O CÓDIGO PARA RECUPERAR OS DADOS DA API
-        /**
-         * Exemplo de requisição e resposta da API:
-         * 
-         * URL: https://viacep.com.br/ws/80230130/json  (perceba onde na URL é inserido o CEP sem traço)
-         * Resposta:
-         * {
-            "cep": "80230-130",
-            "logradouro": "Rua Rockefeller",
-            "complemento": "",
-            "bairro": "Rebouças",
-            "localidade": "Curitiba",
-            "uf": "PR",
-            "ibge": "4106902",
-            "gia": "",
-            "ddd": "41",
-            "siafi": "7535"
-            }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/script.js"></script>
+   
 
-         **/
+    <title>Busca CEP</title>
+   
+</head>
+
+<body>
+
+    <main>
+    <h1>Busca Cep</h1>
+
+    <div id="form">
+        <label>Digite o CEP sem traço: </label>
+        <input type="number" id="cep" />
+    
+
+    <button onclick="consultaEndereco()">Consultar</button>
+
+    <div id="resultado">
+        <p>Seu Resultado Aqui: </p>
+    </div>
+</div>
 
 
-        async function fetchCEP(cep) {
-            
-           //...
-           // TODO: Fazer tratamento de erro (validação)
 
-        }
 
-        form.addEventListener("submit", (event) => {
-            event.preventDefault()
-            //...
-        })
+    </main>
 
-    </script>
 
 </body>
-
-
 </html>
+
+
